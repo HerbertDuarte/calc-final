@@ -5,13 +5,9 @@
 }
 
 body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
   height: 100vh;
   width: 100%;
+  max-width: none;
 
   background-color: #333;
   color: white;
@@ -43,6 +39,8 @@ label{
 main{
   height: calc(100vh - 30px);
   display: flex;
+  width: 100%;
+  max-width: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
