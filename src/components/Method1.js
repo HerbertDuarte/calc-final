@@ -31,13 +31,13 @@ const Method1 = () => {
   return (
     <form onSubmit={calcular}>
 
-        <label HtmlFor="media">Digite sua média geral do semestre</label>
-        <input type="number" name="media" class="media" id="media" 
+        <label htmlFor="media">Digite sua média geral do semestre</label>
+        <input type="number" name="media" className="media" id="media" 
         value={media}
         onChange={(e) => setMedia(e.target.value)}/>
       
         <input
-          class="botao"
+          className="botao"
           id="botao"
           type="submit"
           value="Calcular"

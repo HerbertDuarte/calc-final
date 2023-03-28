@@ -1,7 +1,6 @@
 import FormMedias from "@/components/FormMedias";
 import Method1 from "@/components/Method1";
 import Method2 from "@/components/Method2";
-import styles from "@/styles/Home.module.css";
 import { useState } from "react";
 
 export default function Home() {
