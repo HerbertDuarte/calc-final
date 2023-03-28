@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer>Site desenvolvido por <a href="">Herbert Duarte</a></footer>
+      <footer>Site desenvolvido por <a href="https://herbertduarte.github.io/">Herbert Duarte</a></footer>
     </>
   );
 }
