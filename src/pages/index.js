@@ -8,23 +8,25 @@ export default function Home() {
 
   return (
     <>
-      <h1>
-        Média para as provas finais
-        <br />
-        IFBA
-      </h1>
+      <main>
+        <div>
+          <h1>
+            Média para as provas finais
+            IFBA
+          </h1>
+          <FormMedias
+          method={method}
+          setMethod={setMethod}/>
+          {method == 1 && (
+            <Method1/>
+          )}
+          {method == 2 && (
+            <Method2/>
+          )}
+        </div>
+      </main>
 
-      <FormMedias 
-      method={method} 
-      setMethod={setMethod}/>
-
-      {method == 1 && (
-        <Method1/>
-      )}
-
-      {method == 2 && (
-        <Method2/>
-      )}
+      <footer>Site desenvolvido por <a href="">Herbert Duarte</a></footer>
     </>
   );
 }

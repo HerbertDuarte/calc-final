@@ -12,7 +12,6 @@ body{
 
   height: 100vh;
   width: 100%;
-  padding: 20px;
 
   background-color: #333;
   color: white;
@@ -27,4 +26,49 @@ form{
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
+}
+
+h1{
+  padding-bottom: 30px;
+  font-size: 1.8em;
+}
+
+label{
+  display: inline-flex;
+  text-align: left;
+  width: 90%;
+  margin-bottom: -10px;
+}
+
+main{
+  height: calc(100vh - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+footer{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #666;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.3em;
+  font-size: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fbae29;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #ffc662;
 }
