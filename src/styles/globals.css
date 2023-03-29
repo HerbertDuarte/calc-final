@@ -37,7 +37,7 @@ label{
 }
 
 main{
-  height: calc(100vh - 30px);
+  min-height: calc(100vh - 30px);
   display: flex;
   width: 100%;
   max-width: none;
@@ -69,4 +69,26 @@ footer a {
 footer a:hover {
   text-decoration: none;
   color: #ffc662;
+}
+
+.logoIfba{
+  width: 250px;
+}
+
+@media (max-width: 500px) {
+  .logoIfba{
+    width: 200px;
+  }
+}
+
+@media (max-width: 420px) {
+  .logoIfba{
+    width: 160px;
+  }
+}
+
+@media (max-width: 375px) {
+  .logoIfba{
+    width: 120px;
+  }
 }

@@ -6,12 +6,13 @@ const Method1 = () => {
   const calcular = (e) => {
     e.preventDefault();
 
-    if (media.length == 0) {
+    const myInput = document.getElementById("media");
+    if (myInput.value.length == 0) {
       alert(
         "❌ ERRO : Por favor, preencha todos os campos com valores válidos!"
       );
     } else {
-      if (media > 10) {
+      if (myInput.value > 10) {
         alert(
           "❌ ERRO : Por favor, preencha todos os campos com valores válidos!"
         );
@@ -36,17 +37,16 @@ const Method1 = () => {
 
   return (
     <form onSubmit={calcular}>
-      <label htmlFor="media" >Digite sua média geral do semestre</label>
-        <input
-          type="number"
-          // placeholder="Digite sua média geral do semestre"
-          name="media"
-          className={styles.media}
-          id="media"
-          value={media}
-          onChange={(e) => setMedia(e.target.value)}
-        />
-      
+      <label htmlFor="media">Digite sua média geral do semestre</label>
+      <input
+        type="number"
+        // placeholder="Digite sua média geral do semestre"
+        name="media"
+        className={styles.media}
+        id="media"
+        value={media}
+        onChange={(e) => setMedia(e.target.value)}
+      />
 
       <input
         className={styles.btn}

@@ -10,9 +10,9 @@ export default function Home() {
     <>
       <main>
         <div>
+          <img className="logoIfba" src="/ifba.png" alt="IFBA BAHIA" />
           <h1>
-            Média para as provas finais
-            IFBA
+            Cálculo de provas finais
           </h1>
           <FormMedias
           method={method}
