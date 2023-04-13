@@ -44,6 +44,7 @@ const Method1 = () => {
         name="media"
         className={styles.media}
         id="media"
+        step="0.1"
         value={media}
         onChange={(e) => setMedia(e.target.value)}
       />
